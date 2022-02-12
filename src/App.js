@@ -1,18 +1,12 @@
 import React from "react";
-
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import "./App.css";
 
 import { connect } from "react-redux";
 
 import Navbar from "./components/Navbar/Navbar";
-import Products from "./components/Products/Products";
-import Cart from "./components/Cart/Cart";
+import Products from "./components/Products/product";
+import Cart from "./components/Cart/Cart.js";
 import SingleItem from "./components/SingleItem/SingleItem";
 
 function App({ current }) {
